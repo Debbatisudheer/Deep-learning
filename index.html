@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <title>Your Web Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Deep Learning</h1>
+
+    <h2><strong>Artificial Neurons:</strong></h2>
+    <ul>
+        <li>Think of artificial neurons as the building blocks of neural networks, Each neuron takes in some input, processes it, and produces an output These inputs are typically numerical values.</li>
+        <li>Neurons are inspired by the neurons in our brains, which receive signals from other neurons, process them, and send out new signals.</li>
+    </ul>
+     <h3>Step-by-step Example:</h3>
+    <p><strong>Input:</strong> Imagine you're deciding whether to wear a jacket based on the weather. Your friend tells you it's 15 degrees Celsius outside and it's not raining. These two pieces of information are your inputs.</p>
+    <p><strong>Processing:</strong> Now, you have a special friend called "Neuron". Neuron takes these inputs and does some math. It multiplies the temperature (15) by a number (let's call it 0.1) and adds it to the result of multiplying rain (0) by another number (let's call it 0.5). So, you get:</p>
+    <p class="indent">(15 * 0.1) + (0 * 0.5) = 1.5</p>
+    <p>This number, 1.5, is what Neuron comes up with after processing your inputs.</p>
+    <p><strong>Output:</strong> Now, Neuron has to make a decision based on this number. Let's say if the number is bigger than 1, you decide to wear a jacket. Otherwise, you don't. In our case, 1.5 is bigger than 1, so you decide to wear a jacket.</p>
+     <p><strong>Learning (Training) Neural Networks:</strong> In the example, we chose those numbers (0.1 and 0.5) as weights randomly to illustrate the concept of how a neural network processes inputs. However, in a real neural network, these numbers (weights) are learned during a process called training.</p>
+    <p>During training, the neural network is presented with many examples where the inputs (such as temperature and rain) are known along with the correct output (whether to wear a jacket or not). The network adjusts its weights based on these examples to minimize the difference between its predictions and the correct outputs.</p>
+    <p>So, the network learns the best weights through this process of trial and error, ensuring that it makes accurate predictions based on the inputs it receives during both the training and testing phases. This is a fundamental aspect of neural networks called "learning" or "training", where the network learns to map inputs to outputs by adjusting its weights.</p>
+   <h3>Step-by-step Example:</h3>
+    <p><strong>Imagine you're teaching a friend how to decide whether to wear a jacket or not based on the weather.</strong></p>
+    <p><strong>Choosing Numbers:</strong> At first, you randomly pick some numbers (like 0.1 and 0.5) to use in the decision-making process. These are like guesses.</p>
+    <p><strong>Practice:</strong> You give your friend many examples of different weather conditions along with whether they should wear a jacket or not. For example, when it's 20 degrees and sunny, they shouldn't wear a jacket.</p>
+    <p><strong>Adjusting:</strong> Your friend tries using the numbers you picked to make decisions. Sometimes they get it right, but sometimes they get it wrong.</p>
+    <p><strong>Learning:</strong> Every time they make a mistake, they adjust the numbers a little bit to try to get closer to the correct decision. For example, if they often say "wear a jacket" when it's too warm, they might decrease the number they multiply by the temperature.</p>
+    <p><strong>Improving:</strong> With lots of practice and adjustments, your friend gets better and better at making the right decision based on the weather. Eventually, they'll be able to make good decisions even with new weather conditions they haven't seen before.</p>
+    <p><strong>That's how a neural network works too. It starts with random guesses, learns from lots of examples, adjusts its guesses based on whether it got them right or wrong, and improves over time.</strong></p>
+
+    <h3>In Humans:</h3>
+    <ul>
+        <li>Neurons are cells in our brains that help us think, learn, and do things.</li>
+        <li>They decide whether to send signals based on the signals they receive from other neurons.</li>
+        <li>We learn and remember things because our brain neurons can change and adapt over time.</li>
+    </ul>
+    <h3>In Computers (Neural Networks):</h3>
+    <ul>
+        <li>Artificial neurons are like tiny decision-makers in computer programs.</li>
+        <li>They take in input, do some math with it, and decide whether to send a signal or not.</li>
+        <li>These artificial neurons learn and improve by adjusting their "decision-making" rules based on examples they see.</li>
+    </ul>
+    <p>In simple terms, just like brain neurons help us think, artificial neurons in computers make decisions based on input data and can learn to do tasks better over time.</p>
+    <!-- Add more content here -->
+    <h2><strong>Activation Functions:</strong></h2>
+    <ul>
+        <li>Activation functions are mathematical operations that determine whether a neuron should "fire" or not based on its input.</li>
+        <li>They introduce non-linearity into the network, allowing it to learn complex patterns.</li>
+        <li>Common activation functions include: sigmoid, tanh, ReLU (Rectified Linear Unit), and softmax</li>
+         <ul>
+        <li>Activation functions are like decision-makers for artificial neurons. They decide whether a neuron should "activate" or not based on the input it receives.</li>
+        <li><strong>Sigmoid Function:</strong> This function helps decide if a neuron should be active or not. It gives a number between 0 and 1 as output. If the input is big, it's closer to 1; if it's small or negative, it's closer to 0. It's like a light switch that gradually turns on when it gets brighter.</li>
+        <li><strong>Tanh Function:</strong> Similar to the sigmoid, but it gives numbers between -1 and 1. When the input is positive, it's closer to 1; when it's negative, it's closer to -1. It's like a light switch that can go both ways, with 0 in the middle.</li>
+        <li><strong>ReLU Function:</strong> This one is simpler. If the input is positive, it stays as it is. If it's negative, it becomes 0. It's like a light switch that turns on only when there's enough brightness.</li>
+        <li><strong>Softmax Function:</strong> This one is like dividing a pie. It helps when we have many options to choose from. It makes sure that all the options add up to 1, like dividing a pie evenly among friends.</li>
+    </ul>
+    <p>All these functions help make decisions inside a neural network. They help the network learn and understand different kinds of data, like images or words, so it can do tasks like recognizing objects in pictures or understanding language.</p>
+    <ul>
+        <li>Activation functions are like decision-makers for artificial neurons. They decide whether a neuron should "activate" or not based on the input it receives.</li>
+        <li><strong>Sigmoid Function:</strong>
+            <ul>
+                <li>Use it when you want your output to be between 0 and 1.</li>
+                <li>Good for tasks like yes/no decisions or probabilities.</li>
+            </ul>
+        </li>
+        <li><strong>Tanh Function:</strong>
+            <ul>
+                <li>Similar to sigmoid, but it gives outputs between -1 and 1.</li>
+                <li>Use it when your data can be positive or negative.</li>
+            </ul>
+        </li>
+        <li><strong>ReLU Function:</strong>
+            <ul>
+                <li>Use it as a default for most hidden layers.</li>
+                <li>It's fast and works well in many cases.</li>
+            </ul>
+        </li>
+        <li><strong>Softmax Function:</strong>
+            <ul>
+                <li>Use it when you're doing multi-class classification.</li>
+                <li>It gives you probabilities for each class.</li>
+            </ul>
+        </li>
+    </ul>
+        <p>In simple terms, pick sigmoid or tanh when you want specific output ranges, use ReLU for most hidden layers, and choose softmax for classification problems with multiple options.</p>
+
+        <h3>Activation Functions in Humans:</h3>
+    <ul>
+        <li><strong>Brain Signals:</strong> In our brains, neurons send signals to each other. When a neuron gets enough signals from its neighbors, it "fires" and passes the signal along.</li>
+        <li><strong>Deciding to Fire:</strong> Neurons have a threshold. If the combined signals they receive reach or exceed this threshold, they fire. Otherwise, they stay quiet.</li>
+        <li><strong>Handling Complexity:</strong> Our brains process information in complex ways. Neurons don't just add up signals; they use various rules to decide when to fire, allowing us to think and learn.</li>
+        <li><strong>Different Rules:</strong> There are many types of neurons in our brains, each with its own rules for deciding when to fire. This helps us handle different tasks like seeing, hearing, and thinking.</li>
+    </ul>
+    <h3>Activation Functions in Computers (Neural Networks):</h3>
+    <ul>
+        <li><strong>Simulating Neurons:</strong> In computers, we use artificial neurons in neural networks to simulate this firing process. Each neuron has an activation function that decides when it should "fire" based on the input it receives.</li>
+        <li><strong>Threshold Decision:</strong> Similar to our brains, these artificial neurons have a threshold. If the input they receive crosses this threshold, they "fire" and produce an output. Otherwise, they remain inactive.</li>
+        <li><strong>Learning Complexity:</strong> Neural networks in computers also need to handle complex tasks. Activation functions help by introducing nonlinearity, allowing the network to learn and understand complex patterns in data.</li>
+        <li><strong>Different Activation Functions:</strong> There are different types of activation functions used in neural networks, each with its own way of deciding when to fire. Common ones include sigmoid, tanh, ReLU, and softmax.</li>
+    </ul>
+    <p>In simple terms, activation functions in both humans and computers decide when neurons should "fire" based on the signals they receive. This firing process helps us think and learn in our brains and enables computers to understand and process information in neural networks.</p>
+    <!-- Add more content here -->
+
+
+
+
+        <h2>Weights:</h2>
+    <p>Weights are the parameters that the neural network learns during the training process. Each input to a neuron is multiplied by a weight, which determines its importance. These weights are adjusted during training to minimize the difference between the actual output and the desired output.</p>
+ <h3>User Adjusting Weights:</h3>
+    <p><strong>Initial Guess:</strong> Imagine you have a simple rule: the more hours you study, the higher chance you have to pass a test. But at the start, the computer doesn't know how much studying matters. It makes a guess, saying that for every hour of study, it gives you half a point towards passing.</p>
+    <p><strong>Making Predictions:</strong> Now, let's say someone studies for 5 hours. According to our initial guess, the computer predicts that this person will get 2.5 points towards passing.</p>
+    <p><strong>Measuring Mistakes:</strong> But when we look at the actual result, we see that the person did pass the test. So, the computer's prediction was off by -1.5 points (because they actually passed, not just 2.5 points towards passing).</p>
+    <p><strong>Adjusting Weights:</strong> Now, the computer tries to learn from this mistake. It says, "Okay, I was off by -1.5 points. How can I adjust my rule to be more accurate?" It decides to tweak its initial guess a bit. Since the error was negative, it might say, "Maybe I should give less weight to studying for passing the test." So, it makes the weight a bit smaller.</p>
+    <p><strong>Repeating the Process:</strong> The computer does this over and over again with more examples. It looks at different people, sees how much they studied, compares it with whether they passed, and adjusts its rule each time. Eventually, after looking at many examples, the computer gets better at predicting who will pass based on how much they study.</p>
+    <p>In simple terms, the computer learns from its mistakes, adjusting its guess each time until it gets better at predicting the outcome.</p>
+  <h3>Simple Example of Predicting Test Results:</h3>
+    <p><strong>Initial Guess:</strong> At the start, the neural network makes random guesses for the weight. Let's say it starts with a weight of 0.5.</p>
+    <p><strong>Making Predictions:</strong> With this initial weight, the network predicts whether a person will pass the test based on how many hours they studied. For example, if someone studied for 5 hours, the prediction would be:</p>
+    <p class="indent">Prediction = 5 hours * 0.5 = 2.5</p>
+    <p>Here, the network predicts that the person has a score of 2.5, but we need to convert this into a pass/fail prediction.</p>
+    <p><strong>Measuring Mistakes:</strong> Let's say the person actually passed the test. So, the error would be the difference between the prediction and the actual outcome:</p>
+    <p class="indent">Error = Actual Outcome - Prediction</p>
+    <p class="indent">= 1 (passed) - 2.5 (predicted)</p>
+    <p class="indent">= -1.5</p>
+    <p>This error shows how far off the prediction was from the reality.</p>
+    <p><strong>Adjusting Weights:</strong> Now, the network adjusts the weight based on the error. It changes the weight to reduce this error. The adjustment formula might look like:</p>
+    <p class="indent">New Weight = Old Weight + Learning Rate * Error * Input</p>
+    <p>Let's assume the learning rate is 0.1 (a small value that controls how much we adjust the weight). So, the new weight would be:</p>
+    <p class="indent">New Weight = 0.5 + 0.1 * (-1.5) * 5</p>
+    <p class="indent">= 0.5 - 0.75</p>
+    <p class="indent">= -0.25</p>
+    <p>The network adjusts the weight from 0.5 to -0.25, making it negative because the error was negative.</p>
+    <p><strong>Repeating the Process:</strong> This process repeats with more examples. The network looks at many students, sees how well it predicts their test results, adjusts the weight accordingly, and keeps doing this until it gets better at predicting whether someone will pass based on how many hours they studied.</p>
+    <p>In summary, the network learns from examples by guessing, checking errors, and adjusting weights until it can predict accurately.</p>
+    <!-- Add more content here -->
+ <h3>Comparison of Learning in Humans and Computers:</h3>
+    <h3>Learning in Humans:</h3>
+    <ul>
+        <li><strong>Observation and Experience:</strong> We humans learn by seeing, hearing, and experiencing things around us. For example, we learn what a dog looks like by seeing different dogs.</li>
+        <li><strong>Trial and Error:</strong> We try different things to solve problems and learn what works and what doesn't. For instance, when we learn to ride a bike, we might fall a few times before we get it right.</li>
+        <li><strong>Feedback:</strong> When we do something, we get feedback on whether it was good or bad. If we touch something hot and get burned, we learn not to touch it again.</li>
+        <li><strong>Using What We Learn:</strong> We can use what we learn in new situations. For example, if we learn to swim, we can use similar skills to learn how to float.</li>
+    </ul>
+    <h3>Learning in Computers (Neural Networks):</h3>
+    <ul>
+        <li><strong>Data Input:</strong> Computers learn from data like pictures, text, or numbers. This data is like what we see and hear.</li>
+        <li><strong>Adjusting Weights:</strong> At first, computers make random guesses (like random weights). They process the data and make predictions.</li>
+        <li><strong>Finding Mistakes:</strong> Computers check if their predictions are right or wrong. If they're wrong, they figure out how much they missed by.</li>
+        <li><strong>Fixing Mistakes:</strong> Computers adjust their guesses (weights) based on the mistakes they made. They try to make their predictions closer to reality.</li>
+        <li><strong>Practice Makes Perfect:</strong> This process repeats many times with lots of data. Each time, the computer gets better at making predictions.</li>
+    </ul>
+    <p>In simple terms, just like we learn from seeing, trying, and getting feedback, computers (specifically neural networks) learn from data, mistakes, and adjustments to get better at making predictions or decisions.</p>
+    <!-- Add more content here -->
+        <h2>Biases in Neural Networks:</h2>
+    <p>Biases are another set of parameters in neural networks. They allow neurons to have some flexibility in output even when all inputs are zero. Biases are also learned during training and help the network better fit the data.</p>
+    <!-- Add more content here -->
+        <h3>Biases in Neural Networks:</h3>
+    <ul>
+        <li><strong>Starting Points:</strong> Imagine each neuron in a neural network as a little decision-maker. Biases are like their starting points or default settings. Even if there's no input, biases give them a starting level of activity.</li>
+        <li><strong>Adding Flexibility:</strong> Biases add some wiggle room for neurons. They allow neurons to fire even if the inputs aren't pushing them too much. It's like saying, "Even if there's not much going on, I still have something to say."</li>
+        <li><strong>Learning Alongside Weights:</strong> During training, biases are adjusted along with the weights. This helps the network fine-tune its decisions based on the data it's learning from. It's like tweaking the starting points to fit the situation better.</li>
+        <li><strong>Helping Fit the Data:</strong> By adjusting biases, the network can better match the patterns it sees in the data. It's like making sure each neuron is set just right to make the best decisions based on what it's learning.</li>
+    </ul>
+    <p>In simple terms, biases are like starting points for neurons, giving them a little nudge to start making decisions. They're adjusted during training to help the network make better sense of the data it's dealing with.</p>
+    <!-- Add more content here -->
+        <h3>Example: Predicting Student Grades</h3>
+    <h3>Suppose we have a neural network that predicts whether a student will pass a test based on the number of hours they study. Here's how biases might be defined:</h3>
+    <ul>
+        <li><strong>Initial Setup:</strong>
+            <ul>
+                <li>We start with a simple neural network with one neuron.</li>
+                <li>The neuron takes the number of hours studied as input and outputs a prediction of whether the student will pass the test (1 for pass, 0 for fail).</li>
+            </ul>
+        </li>
+        <li><strong>Biases Initialization:</strong>
+            <ul>
+                <li>Initially, biases are randomly assigned. Let's say our initial bias is set to 0.5. This means that even if a student studies zero hours, there's still a starting assumption (bias) that they have a 50% chance of passing.</li>
+            </ul>
+        </li>
+        <li><strong>Making Predictions:</strong>
+            <ul>
+                <li>Let's say a student studied for 3 hours. The neural network computes the weighted sum of the input (3 hours) multiplied by the weight (which will be learned during training) and adds the bias.</li>
+            </ul>
+        </li>
+        <li><strong>Adjusting Biases During Training:</strong>
+            <ul>
+                <li>After making predictions, the network checks how accurate its predictions are compared to the actual outcomes.</li>
+                <li>If the predictions are off, the biases are adjusted to reduce the error. For example, if the network predicted a pass but the student actually failed, the bias might be adjusted downwards to give less starting confidence in passing for future predictions.</li>
+            </ul>
+        </li>
+        <li><strong>Iterative Learning Process:</strong>
+            <ul>
+                <li>This process repeats for many examples of students studying and their corresponding test results.</li>
+                <li>With each iteration (or epoch), the biases are adjusted to improve the accuracy of the predictions.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>In summary, biases in a neural network are initialized with starting values, and they are adjusted during training to help the network make better predictions based on the data it learns from.</p>
+    <!-- Add more content here -->
+         <h3>Comparison: Biases in Decision-Making</h3>
+    <h3>In Humans:</h3>
+    <ul>
+        <li><strong>Natural Biases:</strong> Humans naturally have biases based on their experiences and background. These biases affect how they see the world and make decisions.</li>
+        <li><strong>Personal Influence:</strong> Biases in humans can come from personal experiences, upbringing, and culture. They can sometimes lead to unfair or subjective judgments.</li>
+        <li><strong>Awareness and Control:</strong> Humans can be aware of their biases and try to control them. They can consciously try to be fair and open-minded, but it's not always easy.</li>
+        <li><strong>Social Factors:</strong> Biases can also be influenced by society, such as media, friends, and cultural norms. These external factors shape how people think and act.</li>
+    </ul>
+    <h3>In Computers (Neural Networks):</h3>
+    <ul>
+        <li><strong>Starting Point:</strong> In computers, biases are like starting points for making decisions. They're set randomly at first but get adjusted during learning.</li>
+        <li><strong>Learning and Improvement:</strong> Computers learn from data and adjust biases to make better predictions. They don't have personal experiences or emotions like humans do.</li>
+        <li><strong>Mathematical Process:</strong> Bias calculations in computers are part of the math that happens inside the neural network. They're added to inputs and help decide the output.</li>
+        <li><strong>Objective Optimization:</strong> Unlike humans, computers don't have personal beliefs or social influences. They optimize biases objectively to improve their performance on tasks.</li>
+    </ul>
+    <p>So, in simple terms, human biases come from personal experiences and society, while biases in computers are numbers that get adjusted during learning to help make better decisions based on data.</p>
+    <!-- Add more content here -->
+        <h2>Feedforward Process in Neural Networks:</h2>
+    <ul>
+        <li>
+            <strong>Input:</strong>
+            <p>Imagine you're feeding data into a machine, like pictures of cats and dogs for a computer to recognize. This data goes into the neural network through the input layer.</p>
+        </li>
+        <li>
+            <strong>Processing:</strong>
+            <p>Inside the neural network, the data travels through layers called hidden layers. These layers contain many little decision-makers called neurons.
+            Each neuron takes the input data and does some math with it. It uses numbers called weights and biases to decide how important each piece of data is.
+            These neurons work together, adjusting their calculations, and passing information to the next layer.</p>
+        </li>
+        <li>
+            <strong>Activation:</strong>
+            <p>At each neuron, the result of the math is passed through something like a decision-making filter called an activation function.
+            This function decides whether the neuron should "fire" and send its signal to the next layer. It adds a bit of complexity to the calculations.</p>
+        </li>
+        <li>
+            <strong>Output:</strong>
+            <p>After going through all the hidden layers, the data reaches the output layer. Here, the neural network produces its final prediction or output.
+            For example, if the network was trying to tell whether an image was a cat or a dog, the output might be "cat" or "dog" based on which neuron fires more strongly.</p>
+        </li>
+        <li>
+            <strong>Final Decision:</strong>
+            <p>The output of the neural network gives you the final decision or prediction based on the input data.</p>
+        </li>
+    </ul>
+    <p>In simple terms, the feedforward process is like passing data through a series of filters. Each filter (neuron) does some math, makes a decision, and passes the information to the next filter until you get your final result.</p>
+    <!-- Add more content here -->
+        <h2>Comparison with Human Brain:</h2>
+    <p>In humans, the flow of information in the brain is somewhat similar to the feedforward process in neural networks, although it's much more complex. Here's a simplified explanation:</p>
+    <ul>
+        <li>
+            <strong>Sensory Input:</strong>
+            <p>Just like in a neural network where data is fed in, humans receive information through our senses - sight, hearing, touch, taste, and smell.</p>
+        </li>
+        <li>
+            <strong>Processing in the Brain:</strong>
+            <p>Our brain contains billions of interconnected neurons, somewhat like the layers in a neural network.
+            When sensory information enters the brain, neurons in different regions process it. For example, visual information is processed in the visual cortex, auditory information in the auditory cortex, and so on.</p>
+        </li>
+        <li>
+            <strong>Neural Networks in the Brain:</strong>
+            <p>Each neuron in our brain acts like a little decision-maker, similar to artificial neurons in a neural network. When a neuron receives signals from other neurons, it decides whether to "fire" and pass the signal along.</p>
+        </li>
+        <li>
+            <strong>Complex Computations:</strong>
+            <p>Neurons in the brain perform complex computations involving weights and connections between them, similar to the calculations done in artificial neural networks.
+            These computations allow us to process information, recognize patterns, and make decisions.</p>
+        </li>
+        <li>
+            <strong>Feedback and Adaptation:</strong>
+            <p>Unlike the simple feedforward process in neural networks, the human brain also involves feedback loops and adaptation.
+            We learn from our experiences, memories, and interactions with the environment. Our brains adapt and change over time based on these experiences.</p>
+        </li>
+        <li>
+            <strong>Consciousness and Decision-Making:</strong>
+            <p>Ultimately, the processed information leads to conscious awareness and decision-making. Our brains integrate sensory information, memories, emotions, and other factors to make decisions and take actions.</p>
+        </li>
+    </ul>
+    <p>In summary, while the feedforward process in neural networks is a simplified model of information processing, the workings of the human brain involve a much more intricate and dynamic process, incorporating feedback loops, adaptation, and conscious awareness.</p>
+    <!-- Add more content here -->
+</body>
+</html>
+

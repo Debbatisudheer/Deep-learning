@@ -1,0 +1,34 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Fallback font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+h1 {
+    font-family: 'Trade Winds', cursive; /* Trade Winds font */
+    color: red; /* Red color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    position: relative;
+    display: inline-block;
+}
+
+/* Subheading styles */
+h2 {
+    font-family: 'Trade Winds', cursive; /* Trade Winds font */
+    font-size: 30px; /* Set the desired size */
+    color: #FFBF00; /* Yellow color */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
